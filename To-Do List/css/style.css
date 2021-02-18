@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #2C2C2C;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* to do container */
+#main-container {
+    background-color: #242424;
+    position: relative;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-top: 5vh;
+}
+
+/* add container*/
+#adds-container {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+#adds-container input, #adds-container button {
+    padding: 10px;
+    background-color: #393939;
+    border: none;
+    width: 80%;
+    display: inline-block;
+}
+
+#adds-container button {
+    width: 18%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#adds-container button:hover {
+    background-color: #FF7066;
+}
+
+#adds-container button i {
+    color: #FF7066;
+    transition: .5s;
+}
+
+#adds-container button:hover > i{
+    color: #242424;
+}
+
+/* task container */
+.task {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.task:hover .fa-trash {
+    display: block;
+}
+
+.fa.fa-check {
+    border-radius: 50%;
+    border: 1px solid #444;
+    padding: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fa.fa-check:hover, .fa.fa-trash:hover {
+    color: #FF7066;
+    border-color: #FF7066;
+}
+
+.fa.fa-check.done {
+    color: #0DD657;
+    border: 1px solid #0DD657;
+}
+
+.fa.fa-trash {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#empty-tasks {
+    text-align: center;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 20px
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #main-container {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .fa.fa-trash {
+        display: block;
+    }
+
+
+}
+
